@@ -1,21 +1,17 @@
 import { Head, BlitzLayout } from "blitz"
-import { Link, Routes } from "blitz"
+import Header from "./Header"
+import Footer from "./Footer"
 
 const Layout: BlitzLayout<{ title?: string }> = ({ title, children }) => {
   return (
     <>
       <Head>
         <title>{title || "supportive-push"}</title>
-        <ul>
-          <li>
-            <Link href="/">
-              <a>home</a>
-            </Link>
-          </li>
-        </ul>
+        <Header />
       </Head>
 
       {children}
+      <Footer />
     </>
   )
 }
