@@ -7,7 +7,8 @@ const Header: BlitzLayout = () => {
     <>
       <nav className={styles.headerNav}>
         <ul className={styles.headerUl}>
-          <li className={styles.headerLl}>
+          <li className={styles.headerLi}>まいにち名言</li>
+          <li className={styles.headerLi}>
             <Link href="/">
               <a className={styles.headerHref}>home</a>
             </Link>
