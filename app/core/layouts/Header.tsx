@@ -14,8 +14,18 @@ const Header: BlitzLayout = () => {
             </Link>
           </li>
           <li>
-            <Link href="/">
-              <a className={styles.headerHref}>home</a>
+            <Link href="/profile">
+              <a className={styles.headerHref}>profile</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/management">
+              <a className={styles.headerHref}>management</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/meigen">
+              <a className={styles.headerHref}>meigen</a>
             </Link>
           </li>
         </ul>
