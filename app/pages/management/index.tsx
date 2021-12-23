@@ -1,6 +1,7 @@
-import { Suspense } from "react"
-import { Image, Link, BlitzPage, useMutation, Routes } from "blitz"
+import { BlitzPage } from "blitz"
 import Layout from "app/core/layouts/Layout"
+import Calendar from "./Calendar"
+import Task from "./Task"
 
 const Management: BlitzPage = () => {
   return (
@@ -8,7 +9,9 @@ const Management: BlitzPage = () => {
       <main>
         <h1>学習管理</h1>
         <p>カレンダー</p>
+        <Calendar />
         <p>タスク</p>
+        <Task />
         <p>達成度</p>
       </main>
     </div>
